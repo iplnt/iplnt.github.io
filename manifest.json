@@ -1,0 +1,23 @@
+{
+  "name": "Interplanet | Centro de Soluciones",
+  "short_name": "INTERPLANET",
+  "description": "Líderes en soluciones de impresión y servicios digitales.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f8faff",
+  "theme_color": "#005490",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AOP1pL2LmS6XVhFB04y2SMtU9F6bT8cMQMB37ci52y8D790Cu2ndTCkz6Dc_2NDxIDckcd306r8kilUjIaqQmTfYFYzncCtGwfqtS7HW29H29uqG7iwmdbxOhS3SCwLuWj4dhSFjmIviUZt_zfsVzXGJrAgW69kdX4ivvdkA9FIG0y2wdnCw8ABwJ9CG/s1982/Recurso%2025.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AOP1pL2LmS6XVhFB04y2SMtU9F6bT8cMQMB37ci52y8D790Cu2ndTCkz6Dc_2NDxIDckcd306r8kilUjIaqQmTfYFYzncCtGwfqtS7HW29H29uqG7iwmdbxOhS3SCwLuWj4dhSFjmIviUZt_zfsVzXGJrAgW69kdX4ivvdkA9FIG0y2wdnCw8ABwJ9CG/s1982/Recurso%2025.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
