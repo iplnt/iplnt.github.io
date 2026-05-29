@@ -1,10 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi Sitio Web</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Interplanet | Centro de Soluciones</title>
+  
+  <link rel="manifest" href="manifest.json">
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#005490">
+  <meta name="apple-mobile-web-app-title" content="INTERPLANET">
+  <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AOP1pL2LmS6XVhFB04y2SMtU9F6bT8cMQMB37ci52y8D790Cu2ndTCkz6Dc_2NDxIDckcd306r8kilUjIaqQmTfYFYzncCtGwfqtS7HW29H29uqG7iwmdbxOhS3SCwLuWj4dhSFjmIviUZt_zfsVzXGJrAgW69kdX4ivvdkA9FIG0y2wdnCw8ABwJ9CG/s1982/Recurso%2025.png">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { 
+      width: 100%; 
+      height: 100%; 
+      overflow: hidden; 
+      background-color: #f8faff;
+    }
+    /* Estilo del Iframe estilo App Nativa */
+    iframe {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      z-index: 99999;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hola Mundo</h1>
-    <p>Mi web está funcionando en GitHub Pages.</p>
+
+  <iframe src="TU_URL_DE_EJECUCION_DE_APPS_SCRIPT_AQUI" allow="geolocation; microphone; camera"></iframe>
+
+  <script>
+    // Registro del Service Worker para la PWA
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+          .then(reg => console.log('Service Worker registrado con éxito', reg))
+          .catch(err => console.error('Error al registrar el Service Worker', err));
+      });
+    }
+  </script>
 </body>
 </html>
